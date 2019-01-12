@@ -1,3 +1,7 @@
 <div class="jumbo">
-  rentals page
+	<ul>
+		{{#each this.model as |rental|}}
+		<li>{{rental.name}} | {{rental.city}}</li>
+		{{/each}}
+	</ul>
 </div>
